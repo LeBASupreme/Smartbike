@@ -1,0 +1,124 @@
+/* Reset ou normalisation de base (optionnel) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styles généraux */
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* En-tête / Navigation */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    max-height: 40px; /* Hauteur de l’icône ou du logo */
+    margin-right: 10px;
+  }
+  
+  .logo span {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  nav a:hover {
+    color: #007bff; /* Couleur au survol */
+  }
+  
+  .actions {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .actions img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Section Hero */
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Hauteur de la section, ajustez selon vos besoins */
+    overflow: hidden;
+  }
+  
+  .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Pour recadrer l’image de manière à occuper tout l’espace */
+    overflow: hidden;
+  }
+  
+  .hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Couvre la zone en conservant le ratio de l’image */
+  }
+  
+  .hero-content {
+    position: relative;
+    /* Permet d’écrire par-dessus l’image */
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .cta-button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Pied de page */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin-top: 20px;
+  }
+  
